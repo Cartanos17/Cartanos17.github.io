@@ -314,16 +314,13 @@
             // Initialize and add the map
             function initMap() {
               // The location of Uluru
-              var uluru = {lat: 37.280730, lng: , 5.917895};
+              var uluru = {lat: 37.280730, lng: 5.917895};
               // The map, centered at Uluru
               var map = new google.maps.Map(
                   document.getElementById('map'), {zoom: 4, center: uluru});
               // The marker, positioned at Uluru
               var marker = new google.maps.Marker({position: uluru, map: map});
             }
-                </script>
-                <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk046UXBnVe8nkn5ve5d1lcf1hHItjPKQ&callback=initMap">
                 </script>
               </body>
 
@@ -394,7 +391,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbuVk7PBfKWgHkwlJ8Yvh1XutW_jUGpyQ&callback=initMap"
+  type="text/javascript"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     
